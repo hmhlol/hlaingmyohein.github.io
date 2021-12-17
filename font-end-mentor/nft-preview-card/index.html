@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | NFT preview card component</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="image-box off " onmouseover="hold_over()" onmouseout="not_hold_over()">
+                
+                <img src="images/image-equilibrium.jpg" alt="img" id="main_img" class="main_img">
+                <div class="hoverimg" id="hoverimg">
+                    <img src="images/icon-view.svg" alt="" class="img2">
+                </div>
+                 
+            </div>
+            <h3>Equilibrium #3429</h3>
+
+            <p>Our Equilibrium collection promotes balance and calm.</p>
+            <div class="row">
+                <div class="col1"> <img src="images/icon-ethereum.svg" alt=""><span class="col1-content">0.041 ETH</span></div>
+                <div class="col2"> <img src="images/icon-clock.svg" alt=""><span class="col2-content">3 days left</span></div>
+                
+            </div>
+            <span class="line"></span>
+            <div class="creator">
+                <img src="images/image-avatar.png" alt="">
+                <h4>Creation of <span class="name">Jules Wyvern</span></h4>
+            </div>
+        </div>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://twitter.com/HMHish3r3">kyUu6i</a>.
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
