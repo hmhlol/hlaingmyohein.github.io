@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+
+    <div class="container">
+        <div class="main_content">
+            <div class="main_row1">
+                <div class="main_col1"><img src="images/image-jeremy.png" alt=""></div>
+                <div class="main_col2">
+                    <p>Report for</p>
+                    <h1>Jeremy Robson</h1>
+                </div>
+            </div>
+            <div class="main_row2">
+                <p class="p1" onclick="daily_record()">Daily</p>
+                <p class="p2" onclick="weekly_record()">Weekly</p>
+                <p class="p3" onclick="monthly_record()">Monthly</p>
+            </div>
+        </div>
+
+
+        <div class="component no1">
+            <div class="no1_row1">
+                <img src="images/icon-work.svg" alt="" class="component_img">
+            </div>
+            <div class="no1_row2">
+                <div class="content_1">
+                    <div class="col-1">
+                        <p>Work</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/icon-ellipsis.svg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="content_2">
+                    <h1 class="current1">5hrs</h1>
+                    <p class="previous1">Last Week - 7hrs</p>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="component no2">
+            <div class="no2_row1">
+                <img src="images/icon-play.svg" alt="" class="component_img">
+            </div>
+            <div class="no2_row2">
+                <div class="content_1">
+                    <div class="col-1">
+                        <p>Play</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/icon-ellipsis.svg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="content_2">
+                    <h1 class="current2">1hrs</h1>
+                    <p class="previous2">Last Week - 2hrs</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="component no3">
+            <div class="no3_row1">
+                <img src="images/icon-study.svg" alt="" class="component_img">
+            </div>
+            <div class="no3_row2">
+                <div class="content_1">
+                    <div class="col-1">
+                        <p>Study</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/icon-ellipsis.svg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="content_2">
+                    <h1 class="current3">0hrs</h1>
+                    <p class="previous3">Last Week - 1hrs</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="component no4">
+            <div class="no4_row1">
+                <img src="images/icon-exercise.svg" alt="" class="component_img">
+            </div>
+            <div class="no4_row2">
+                <div class="content_1">
+                    <div class="col-1">
+                        <p>Exercise</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/icon-ellipsis.svg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="content_2">
+                    <h1 class="current4">1hrs</h1>
+                    <p class="previous4">Last Week - 1hrs</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="component no5">
+            <div class="no5_row1">
+                <img src="images/icon-social.svg" alt="" class="component_img">
+            </div>
+            <div class="no5_row2">
+                <div class="content_1">
+                    <div class="col-1">
+                        <p>Social</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/icon-ellipsis.svg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="content_2">
+                    <h1 class="current5">1hrs</h1>
+                    <p class="previous5">Last Week - 3hrs</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="component no6">
+            <div class="no6_row1">
+                <img src="images/icon-self-care.svg" alt="" class="component_img">
+            </div>
+            <div class="no6_row2">
+                <div class="content_1">
+                    <div class="col-1">
+                        <p>Self Care</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/icon-ellipsis.svg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="content_2">
+                    <h1 class="current6">0hrs</h1>
+                    <p class="previous6">Last Week - 1hrs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+  
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://twitter.com/HMHish3r3">kyUu6i</a>.
+    </div>
+  <script src="index.js"></script>
+</body>
+</html>
