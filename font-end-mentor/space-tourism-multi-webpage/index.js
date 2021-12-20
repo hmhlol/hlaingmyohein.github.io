@@ -1,8 +1,8 @@
 var target = document.querySelector('.nav_col2');
 
 function hideMenu(){
-    target.style.left = "-500px";
+    target.style.right = "-500px";
 }
 function showMenu(){
-    target.style.left = '121px';
+    target.style.right = '0px';
 }
