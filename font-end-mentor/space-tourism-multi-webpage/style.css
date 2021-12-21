@@ -157,6 +157,9 @@ body{
     color: #0B0D17;
     cursor: pointer;
 }
+.content2 a{
+    text-decoration: none;
+}
 .content2:hover::after{
     content: '';
     width: 450px;
@@ -264,4 +267,203 @@ body{
     .content2:hover::after{
         display: none;
     }
+}
+/* iphone 5/5SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 375px) and (orientation:portrait){
+    .content1{
+        /* border: 1px solid yellow; */
+        width: 75%;
+        margin-top: 130px;
+        height: 270px;
+    }
+    .content1 .title{
+        font-size: 16px;
+        margin-left: 16.82%;
+    }
+    .content1 h1{
+        width: 150px;
+        margin-top: 24px;
+        margin-left: 0px;
+        font-size: 70px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+    .content1 .body{
+        /* border: 1px solid blue; */
+        font-size: 16px;
+        line-height: 25px;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .content2{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        left: 50%;
+        bottom: 10px;
+        transform: translateX(-50%);
+    }
+    .content2 h1{
+        font-size: 20px;
+        margin-top: 60px;
+        margin-left: 15px;
+    }
+    .content2:hover::after{
+        display: none;
+    }
+
+}
+/* IPAD */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait){
+    .home{
+        background-image: url(assets/home/background-home-tablet.jpg);
+    }
+    .nav_col1 span{
+        display: none;
+    }
+    .navbar{
+        width: 715px;
+    }
+    .nav_col2 nav{
+        margin-left: 0px;
+        width: 300px;
+    }
+    .nav_col2{
+        position: absolute;
+        width: 450px;
+        height: 96px; 
+        top: 0;
+        right: 5px;
+        z-index: 2;
+    }
+    .nav_col2 ul{
+
+        margin-top: 0px;
+        width: 440px;
+        position: absolute;
+        left: 0px;
+    }
+    .nav_col2 ul li{
+        margin-right: 20px;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .active::after{
+        width: 100%;
+    }
+    .content1{
+        position: absolute;
+        width: 450px;
+        height: 334px;
+        margin-left: 159px;
+        margin-top: 200px;
+        text-align: center;
+    }
+    .content1 .title{
+        font-size: 20px;
+        margin-left: 90px;
+        width: 271px;
+    }
+    .content1 h1{
+
+        width: 445px;
+        margin-top: 48px;
+       font-size: 100px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+    .content1 .body{
+
+        font-size: 20px;
+        line-height: 25px;
+        width: 444px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .content2{
+        position: absolute;
+        width: 242px;
+        height: 242px;
+        border-radius: 50%;
+        left: 50%;
+        bottom: 90px;
+        transform: translateX(-50%);
+    }
+    .content2 h1{
+        font-size: 32px;
+        margin-top: 103px;
+        margin-left: 15px;
+    }
+    .content2:hover::after{
+        display: none;
+    }
+}
+/* IPAD-PRO */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation:portrait){
+    .navbar{
+        width: 94.5%;
+    }
+    .nav_col2{
+        position: absolute;
+        width: 550px;
+        height: 100px; 
+        top: 0;
+        right: 0px;
+        z-index: 2;
+    }
+    .nav_col2 ul{
+        margin-left: 48px;
+    }
+    .nav_col2 ul li{
+        font-size: 16px;
+    }
+    .content1{
+        position: absolute;
+        /* border: 1px solid yellow; */
+        width: 600px;
+        height: 400px;
+        left: 40%;
+        top: 20%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    .content1 .title{
+        font-size: 30px;
+        margin-left: 70px;
+        width: 350px;
+    }
+    .content1 h1{
+        width: 445px;
+        margin-top: 70px;
+        font-size: 120px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+    .content1 .body{
+        font-size: 30px;
+        line-height: 30px;
+        width: 500px;
+        text-align: center;
+        margin-top: 70px;
+    }
+    .content2{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        left: 50%;
+        bottom: 90px;
+        transform: translateX(-50%);
+    }
+    .content2 h1{
+        font-size: 40px;
+        margin-top: 130px;
+        margin-left: 15px;
+    }
+    .content2:hover::after{
+        display: none;
+    }
+
 }
