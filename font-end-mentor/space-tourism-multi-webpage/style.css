@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .home{
     width: 100%;
@@ -494,7 +494,7 @@ body{
     letter-spacing: 4.76px;
     text-transform: uppercase;
 }
-.dest-moon .colored{
+.colored{
     margin-right: 28px;
     /* background-color: rgba(255,255,255,0.04);
     backdrop-filter: blur(81.5485px); */
@@ -530,7 +530,9 @@ body{
     display: inline-block;
     margin-right: 20px;
     font-size: 16px;
+    letter-spacing: 2.7px;
     text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
     color: #fff;
 }
 .dest-content ul li a{
@@ -644,4 +646,289 @@ body{
     color: #fff;
     width: 150px;
     letter-spacing: 2.7px;
+}
+
+/* default phone */
+@media  only screen and (max-width: 700px) {
+    .dest-moon{
+        background-image: url(assets/destination/background-destination-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 120vh;
+    }
+    .dest-title{
+        position: absolute;
+        width: 221px;
+        height: 19px;
+        top: 88px;
+        text-align: center;
+        right: 86.5px;
+        /* border: 1px solid yellow; */
+        font-size: 16px;
+        line-height: 19.2px;
+        letter-spacing: 2.7px;
+    }
+    .colored{
+        margin-right: 18px;
+        font-size: 16px;
+        line-height: 19.2px;
+        letter-spacing: 2.7px;
+        margin-left: -5px;
+    }
+    .moon{
+        width: 170px;
+        height: 170px;
+        top: 139px;
+        right: 102px;
+    }
+    .dest-content{
+        width: 300px;
+        height: 430px;
+        position: absolute;
+        left: 55px;
+        /* border: 1px solid blue; */
+        top: 335px;
+    }
+    .dest-content nav{
+        width: 270px;
+        /* border: 1px solid yellow; */
+        height: 28px;
+    }
+    .dest-content ul li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 26px;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .dest-name{
+        margin-top: 20px;
+        width: 187px;
+        height: 64px;
+        font-size: 56px;
+        /* border: 1px solid red; */
+        font-weight: 400;
+        line-height: 64.18px;
+        margin-left: 50px;
+    }
+    .dest-description{
+        width: 300px;
+        height: 125px;
+        font-size: 16px;
+        /* border: 1px solid green; */
+        margin-top: 14px;
+        text-align: center;
+        margin-right: 24px;
+        color: #D0D6F9;
+        letter-spacing: 1px;
+    }
+    .line{
+        width: 300px;
+        height: 1px;
+        margin-top: 30px;
+        display: block;
+        background-color: #383B4B;
+    }
+    .block1{
+        position: absolute;
+        width: 143px;
+        height: 50px;
+        /* border: 1px solid white; */
+        margin-top: 20px;
+        left: 70px;
+        text-align: center;
+    }
+    .block1 p:nth-child(1){
+        font-size: 14px;
+        line-height: 16.8px;
+        letter-spacing: 2.36px;
+        /* border: 1px solid green; */
+        width: 100%;
+    }
+    .block1 p:nth-child(2){
+        margin-top: 6px;
+        font-size: 16px;
+
+    }
+    .block2{
+        position: absolute;
+        width: 143px;
+        height: 50px;
+        /* border: 1px solid white; */
+        margin-left: 70px;
+        margin-top: 90px;
+        text-align: center;
+    }
+    .block2 p:nth-child(1){
+        font-size: 14px;
+        line-height: 16.8px;
+        letter-spacing: 2.36px;
+        /* border: 1px solid green; */
+        width: 100%;
+    }
+    .block2 p:nth-child(2){
+        margin-top: 6px;
+        font-size: 16px;
+
+    }
+}
+
+/* iphone 5/5SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) and (orientation:portrait){
+    .dest-moon{
+        height: 150vh;
+    }
+    .moon{
+        right: 50px;
+    }
+    .dest-content{
+        /* border: 1px solid blue; */
+        width: 80%;
+        left: 40px;
+    }
+    .dest-description{
+        width: 100%;
+    }
+    .line{
+        width: 100%;
+    }
+}
+
+/* IPAD */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait){
+    .dest-moon{
+        background-image: url(assets/destination/background-destination-tablet.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .dest-title{
+        margin-left: 38.5px;
+        /* border: 1px solid yellow; */
+        width: 300px;
+        height: 24px;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.38px;
+    }
+    .colored{
+        margin-right: 19px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .moon{
+        width: 300px;
+        height: 300px;
+    }
+    .dest-content{
+        width: 573px;
+        height: 430px;
+        position: absolute;
+        left: 97px;
+        /* border: 1px solid blue; */
+        top: 520px;
+    }
+    .dest-content nav{
+        width: 310px;
+        /* border: 1px solid yellow; */
+        height: 34px;
+        margin-left: 144px;
+    }
+    .dest-content ul li{
+        margin-right: 35px;
+        font-size: 16px;
+        line-height: 19.2px;
+        letter-spacing: 2.7px;
+    }
+    .dest-name{
+        margin-top: 32px;
+        width: 256px;
+        height: 64px;
+        font-size: 80px;
+        /* border: 1px solid red; */
+        font-weight: 400;
+        line-height: 64.18px;
+        margin-left: 154px;
+    }
+    .dest-description{
+        width: 573px;
+        height: 84px;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 400;
+        letter-spacing: 2.3px;
+        text-align: center;
+    }
+    .line{
+        width: 573px;
+        height: 1px;
+        margin-top: 49px;
+    }
+    .block1{
+        width: 216px;
+        height: 61px;
+        /* border: 1px solid white; */
+        text-align: center;
+        margin-left: 65.5px;
+    }
+    .block1 p:nth-child(1){
+        width: 100%;
+        /* border: 1px solid green; */
+        font-size: 14px;
+        line-height: 16.8px;
+        letter-spacing: 2.36px;
+    }
+    .block1 p:nth-child(2){
+        width: 100%;
+        /* border: 1px solid white; */
+        font-size: 28px;
+        line-height: 32.09px;
+        letter-spacing: 2.36px;
+    }
+    .block2{
+        width: 216px;
+        height: 61px;
+        /* border: 1px solid white; */
+        text-align: center;
+        margin-left: 300px;
+    }
+    .block2 p:nth-child(1){
+        width: 100%;
+        /* border: 1px solid green; */
+        font-size: 14px;
+        line-height: 16.8px;
+        letter-spacing: 2.36px;
+    }
+    .block2 p:nth-child(2){
+        width: 100%;
+        /* border: 1px solid white; */
+        font-size: 28px;
+        line-height: 32.09px;
+        letter-spacing: 2.36px;
+    }
+}
+
+
+/* IPAD PRO */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation:portrait){
+    .moon{
+        left: 30%;
+        transform: translateX(-50%);
+    }
+    .dest-content{
+        left: 50%;
+        transform: translateX(-50%);
+        top: 600px;
+    }
+    .dest-description{
+        margin-top: 30px;
+        font-size: 20px;
+        letter-spacing: 3.5px;
+    }
+    .line{
+        margin-top: 60px;
+    }
 }
