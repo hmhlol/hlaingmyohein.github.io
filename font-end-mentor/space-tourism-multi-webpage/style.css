@@ -932,3 +932,313 @@ body{
         margin-top: 60px;
     }
 }
+
+
+/* ########SECTION OF CREWS######### */
+
+.crews{
+    background-image: url(assets/crew/background-crew-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 101.5vh;
+}
+.crew-role{
+    margin-top: 100px;
+    margin-left: 165.5px;
+    font-size: 32px;
+    width: 500px;
+    height: 37px;
+    /* border: 1px solid yellow; */
+    line-height: 37px;
+    text-transform: uppercase;
+    font-family: 'Bellefair', sans-serif;
+    background-clip: text;
+    background-color: rgba(255,255,255,0.5);
+    /* backdrop-filter: blur(81.5485px); */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.crew-name{
+    margin-top: 15px;
+    width: 650px;
+    height: 64px;
+    /* border: 1px solid blue; */
+    margin-left: 165.5px;
+    font-size: 56px;
+    line-height: 64.18px;
+    text-transform: uppercase;
+    font-family: 'Bellefair', sans-serif;
+    color: #fff;
+}
+.crew-bio{
+    width: 444px;
+    height: 126px;
+    /* border: 1px solid green; */
+    margin-top: 18px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-left: 165px;
+    color: #D0D6F9;
+    letter-spacing: 2px;
+}
+.crew-links{
+    width: 150px;
+    height: 15px;
+    margin-top: 50px;
+    /* border: 1px solid green; */
+    margin-left: 167px;
+}
+.crew-links a{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 24px;
+    opacity: 0.17;
+    cursor: pointer;
+}
+.crew-links a:nth-child(4){
+    margin-right: 0px;
+}
+.crew-links .active1{
+    opacity: 1;
+}
+.crew-img1{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: 30px;
+    top: 130px;
+}
+.crew-img2{
+    position: absolute;
+    width: 453px;
+    height: 500px;
+    right: 30px;
+    top: 130px;
+}
+.crew-img3{
+    position: absolute;
+    width: 554px;
+    height: 500px;
+    right: 30px;
+    top: 130px;
+}
+.crew-img4{
+    position: absolute;
+    width: 615px;
+    height: 500px;
+    right: 30px;
+    top: 130px;
+}
+.crew-line{
+    display: none;
+}
+
+/* default phones */
+
+@media only screen and (max-width:700px) {
+    .crews{
+        background-image: url(assets/crew/background-crew-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 120vh;
+    }
+    .crew-img1,.crew-img2,.crew-img3,.crew-img4{
+        width: 300px;
+        height: 300px;
+        top: 169px;
+        right: 24px;
+        /* border: 1px solid yellow; */
+    }
+    .crew-img2{
+        margin-right: 50px;
+    }
+    .crew-line{
+        position: absolute;
+        width: 327px;
+        height: 2px;
+        display: block;
+        background-color: #383B4B;
+        margin-left: 24px;
+        margin-top: 470px;
+    }
+    .crew-links{
+        position: absolute;
+        margin-top: 502px;
+        margin-left: 144px;  
+    } 
+    .crew-links a{
+        width: 10px;
+        height: 10px;
+    }
+    .crew-role,.crew-name,.crew-bio{
+        position: absolute;
+    }
+    .crew-role{
+        /* border: 1px solid blue; */
+        width: 200px;
+        height: 18px;
+        margin-left: 134px;
+        margin-top: 534px;
+        font-size: 16px;
+        line-height: 18.34px;
+        text-align: left;
+        mix-blend-mode: normal;
+    }
+    .crew-name{
+        /* border: 1px solid green; */
+        width: 327px;
+        height: 28px;
+        margin-top: 560px;
+        margin-left: 24px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .crew-bio{
+        width: 327px;
+        height: 100px;
+        /* border: 1px solid yellow; */
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 600px;
+        margin-left: 24px;
+    }
+}
+
+/* iphone 5/5SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) and (orientation:portrait){
+    .crews{
+        height: 140vh;
+    }
+    .crew-img1,.crew-img2,.crew-img3,.crew-img4{
+        left: 20px;
+    }
+    .crew-line{
+        width: 90%;
+    }
+    .crew-links{
+        /* border: 1px solid yellow; */
+        margin-left: 100px;
+    }
+    .crew-role{
+        /* border: 1px solid blue; */
+        margin-left: 60px;
+        text-align: center;
+    }
+    .crew-name{
+        /* border: 1px solid green; */
+        width: 300px;
+        margin-left: 10px;
+    }
+    .crew-bio{
+        /* border: 1px solid white; */
+        width: 300px;
+        height: 190px;
+        margin-left: 10px;
+    }
+}
+
+/* IPAD */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait){
+    .crews{
+        background-image: url(assets/crew/background-crew-tablet.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 110vh;
+    }
+    .crew-line{
+        display: none;
+    }
+    .crew-img1,.crew-img2,.crew-img3,.crew-img4{
+        width: 456px;
+        height: 500px;
+        top: 61%;
+        right: 155.78px
+    }
+    .crew-role{
+        /* border: 1px solid blue; */
+        width: 250px;
+        height: 28px;
+        font-size: 24px;
+        line-height: 27.5px;
+        text-align: center;
+        margin-left: 270px;
+    }
+    .crew-name{
+        width: 500px;
+        height: 46px;
+        font-size: 40px;
+        line-height: 45.84px;
+        text-align: center;
+    }
+    .crew-bio{
+        width: 458px;
+        height: 84px;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: #D0D6F9;
+    }
+    .crew-links{
+        /* border: 1px solid green; */
+        margin-top: 95px;
+        margin-left: 310px;
+    }
+}
+
+/* IPAD PRO */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation:portrait){
+    .crews{
+        height: 100vh;
+    }
+    .crew-role{
+        /* border: 1px solid blue; */
+        width: 350px;
+        height: 40px;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .crew-name{
+        /* border: 1px solid green; */
+        width: 600px;
+        height: 60px;
+        font-size: 50px;
+        line-height: 50px;
+        margin-top: 30px;
+    }
+    .crew-bio{
+        margin-top: 50px;
+        width: 600px;
+        height: 100px;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .crew-links{
+        /* border: 1px solid yellow; */
+        width: 200px;
+        height: 25px;
+        margin-left: 350px;
+    }
+    .crew-links a{
+        width: 25px;
+        height: 25px;
+    }
+    .crew-img1,.crew-img2,.crew-img3,.crew-img4{
+        top: 59%;
+        right: 25%;
+        width: 500px;
+        height: 550px;
+    }
+}
