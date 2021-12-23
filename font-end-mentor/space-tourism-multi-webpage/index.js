@@ -100,3 +100,83 @@ function LoadTitan(data){
     time.innerHTML = data.travel;
     // console.log(data.description);
 }
+
+function DataForCommander(){
+    fetch("data.json")
+     .then(response => response.json())
+     .then(json => {
+        //  console.log(json.crew)
+        LoadCommander(json.crew[0]);
+     })
+}
+
+function LoadCommander(data){
+    // console.log(data.name);
+    var name = document.querySelector('.crew-name');
+    var row = document.querySelector('.crew-role');
+    var bio = document.querySelector('.crew-bio');
+    
+    name.innerHTML = data.name;
+    row.innerHTML = data.role;
+    bio.innerHTML = data.bio
+}
+
+function DataForMissionSpecialist(){
+    fetch("data.json")
+     .then(response => response.json())
+     .then(json => {
+        //  console.log(json.crew)
+        LoadMissionSpecialist(json.crew[1]);
+     })
+}
+
+function LoadMissionSpecialist(data){
+    // console.log(data.name);
+    var name = document.querySelector('.crew-name');
+    var row = document.querySelector('.crew-role');
+    var bio = document.querySelector('.crew-bio');
+    
+    name.innerHTML = data.name;
+    row.innerHTML = data.role;
+    bio.innerHTML = data.bio
+}
+
+function DataForPilot(){
+    fetch("data.json")
+     .then(response => response.json())
+     .then(json => {
+        //  console.log(json.crew)
+        LoadPilot(json.crew[2]);
+     })
+}
+
+function LoadPilot(data){
+    // console.log(data.name);
+    var name = document.querySelector('.crew-name');
+    var row = document.querySelector('.crew-role');
+    var bio = document.querySelector('.crew-bio');
+    
+    name.innerHTML = data.name;
+    row.innerHTML = data.role;
+    bio.innerHTML = data.bio
+}
+
+function DataForFlightEngineer(){
+    fetch("data.json")
+     .then(response => response.json())
+     .then(json => {
+        //  console.log(json.crew)
+        LoadFlightEngineer(json.crew[3]);
+     })
+}
+
+function LoadFlightEngineer(data){
+    // console.log(data.name);
+    var name = document.querySelector('.crew-name');
+    var row = document.querySelector('.crew-role');
+    var bio = document.querySelector('.crew-bio');
+    
+    name.innerHTML = data.name;
+    row.innerHTML = data.role;
+    bio.innerHTML = data.bio;
+}
