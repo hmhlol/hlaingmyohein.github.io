@@ -34,6 +34,7 @@ body{
     margin-top: 24px;
     width: 48px;
     height: 48px;
+    cursor: pointer;
 }
 .nav_col1 span{
     position: absolute;
@@ -479,7 +480,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
 }
 
 .dest-moon .active::after{
@@ -944,7 +945,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 101.5vh;
+    height: 103vh;
 }
 .crew-role{
     margin-top: 100px;
@@ -1243,5 +1244,296 @@ body{
         right: 25%;
         width: 500px;
         height: 550px;
+    }
+}
+
+/* ######SECTION FOR TECHNOLOGY######### */
+.vehicles{
+    background-image: url(assets/technology/background-technology-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+.vehicles .active::after{
+    width: 100%;
+}
+.vehicle-links{
+    position: absolute;
+    width: 80px;
+    height: 310px;
+    /* border: 1px solid blue; */
+    margin-left: 165px;
+    margin-top: 70px;
+}
+.vehicle-links a{
+    width: 80px;
+    height: 80px;
+    display: block;
+    text-align: center;
+    margin-bottom: 32px;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 50%;
+    text-decoration: none;
+    justify-content: center;
+}
+.vehicle-links p{
+    color: #fff;
+    font-size: 32px;
+    line-height: 36.67px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+.link-active{
+    background-color: #fff;
+}
+.vehicle-content{
+    position: absolute;
+    width: 470px;
+    height: 303px;
+    margin-left: 325px;
+    /* border: 1px solid yellow ; */
+    margin-top: 70px;
+}
+.vehicle-title{
+    width: 160px;
+    height: 19px;
+    /* border: 1px solid green; */
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 2.7px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #D0D6F9;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.vehicle-name{
+    margin-top: 11px;
+    width: 470px;
+    height: 64px;
+    /* border: 1px solid red; */
+    font-family: 'Bellefair', sans-serif;
+    font-size: 56px;
+    line-height: 64.18px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+}
+.vehicle-description{
+    width: 444px;
+    height: 185px;
+    margin-top: 17px;
+    /* border: 1px solid white; */
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: normal;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #D0D6F9;
+}
+.vehicle-img{
+    position: absolute;
+    right: 0px;
+    width: 470px;
+    height: 450px;
+}
+.vehicle-img1{
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .vehicles{
+        background-image: url(assets/technology/background-technology-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .vehicle-img{
+        display: none;
+    }
+    .vehicle-img1{
+        display: unset;
+        width: 100%;
+        height: 170px;
+        position: absolute;
+        margin-top: 179px;
+        left: 0;
+    }
+    .vehicle-links{
+        width: 152px;
+        height: 40px;
+        /* border: 1px solid yellow; */
+        display: flex;
+        margin-top: 384px;
+        margin-left: 112px;
+        justify-content: space-between;
+    }
+    .vehicle-links a{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0px;
+    }
+    .vehicle-links p{
+        font-size: 16px;
+        line-height: 18.34px;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: 11px;
+    }
+    .vehicle-content{
+        width: 90%;
+        height: 220px;
+        margin-top: 450px;
+        /* border: 1px solid blue; */
+        margin-left: 24px;
+    }
+    .vehicle-title{
+        width: 100%;
+        height: 17px;
+        /* border: 1px solid green; */
+        text-align: center;
+        /* margin-left: 98px; */
+        font-size: 14px;
+        line-height: 16.8px;
+        letter-spacing: 2.36px;
+    }
+    .vehicle-name{
+        width: 100%;
+        height: 28px;
+        font-size: 24px;
+        line-height: 27.5px;
+        text-align: center;
+    }
+    .vehicle-description{
+        width: 100%;
+        height: 175px;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) and (orientation:portrait){
+    .vehicles{
+        height: 130vh;
+    }
+}
+
+/* IPAD */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait){
+    .vehicles{
+        background-image: url(assets/technology/background-technology-tablet.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .vehicle-img{
+        display: none;
+    }
+    .vehicle-img1{
+        display: unset;
+        width: 100%;
+        height: 310px;
+        position: absolute;
+        margin-top: 80px;
+        left: 0;
+    }
+    .vehicle-links{
+        width: 200px;
+        height: 60px;
+        /* border: 1px solid yellow; */
+        display: flex;
+        margin-top: 420px;
+        margin-left: 279px;
+        justify-content: space-between;
+    }
+    .vehicle-links a{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 0px;
+    }
+    .vehicle-links p{
+        font-size: 24px;
+        line-height: 27.5px;
+        letter-spacing: 1.5px;
+        text-align: center;
+        margin-top: 16px;
+    }
+    .vehicle-content{
+        width: 90%;
+        height: 220px;
+        margin-top: 500px;
+        /* border: 1px solid blue; */
+        margin-left: 24px;
+    }
+    .vehicle-title{
+        width: 100%;
+        height: 17px;
+        /* border: 1px solid green; */
+        text-align: center;
+        /* margin-left: 98px; */
+        font-size: 16px;
+        line-height: 19.2px;
+        letter-spacing: 2.7px;
+    }
+    .vehicle-name{
+        width: 100%;
+        height: 28px;
+        font-size: 40px;
+        line-height: 45.84px;
+        text-align: center;
+        margin-top: 25px;
+    }
+    .vehicle-description{
+        width: 100%;
+        height: 175px;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        margin-top: 50px;
+        letter-spacing: 2.5px;
+    }
+}
+
+/* IPAD PRO */
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation:portrait){
+    .vehicles{
+        background-image: url(assets/technology/background-technology-tablet.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .vehicle-img{
+        display: none;
+    }
+    .vehicle-img1{
+        display: unset;
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        margin-top: 80px;
+        left: 0;
+    }
+    .vehicle-links{
+        margin-top: 550px;
+        margin-left: 350px;
+    }
+    .vehicle-content{
+        margin-top: 650px;
+    }
+    .vehicle-title{
+        font-size: 25px;
+        line-height: 23px;
+    }
+    .vehicle-name{
+        font-size: 45px;
+        line-height: 50px;
+        margin-top: 35px;
+    }
+    .vehicle-description{
+        font-size: 25px;
+        line-height: 35px;
+        margin-top: 50px;
+        letter-spacing: 2.5px;
     }
 }
