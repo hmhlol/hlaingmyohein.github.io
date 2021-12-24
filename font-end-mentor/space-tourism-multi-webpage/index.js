@@ -11,6 +11,9 @@ function destination(){
     window.location = 'destination-moon.html';
 }
 
+function home(){
+    window.location = 'index.html';
+}
 
 // window.addEventListener('load', () => {
 //     fetch("data.json")
@@ -179,4 +182,56 @@ function LoadFlightEngineer(data){
     name.innerHTML = data.name;
     row.innerHTML = data.role;
     bio.innerHTML = data.bio;
+}
+
+
+function DataForVehicle(){
+    fetch('data.json')
+     .then(response => response.json())
+     .then(json => {
+        //  console.log(json.technology[0].name)
+        LoadVehicle(json.technology[0])
+     })
+}
+
+function LoadVehicle(data){
+    var name = document.querySelector('.vehicle-name');
+    var des = document.querySelector('.vehicle-description');
+
+    name.innerHTML = data.name;
+    des.innerHTML = data.description;
+}
+
+function DataForSpacePort(){
+    fetch('data.json')
+     .then(response => response.json())
+     .then(json => {
+        //  console.log(json.technology[0].name)
+        LoadSpacePort(json.technology[1])
+     })
+}
+
+function LoadSpacePort(data){
+    var name = document.querySelector('.vehicle-name');
+    var des = document.querySelector('.vehicle-description');
+
+    name.innerHTML = data.name;
+    des.innerHTML = data.description;
+}
+
+function DataForCapsule(){
+    fetch('data.json')
+     .then(response => response.json())
+     .then(json => {
+        //  console.log(json.technology[0].name)
+        LoadCapsule(json.technology[2])
+     })
+}
+
+function LoadCapsule(data){
+    var name = document.querySelector('.vehicle-name');
+    var des = document.querySelector('.vehicle-description');
+
+    name.innerHTML = data.name;
+    des.innerHTML = data.description;
 }
