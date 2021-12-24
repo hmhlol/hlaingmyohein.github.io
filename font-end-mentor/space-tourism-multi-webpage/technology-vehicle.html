@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/7ab1de848b.js" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+
+  <section class="vehicles">
+    <div class="navbar">
+      <div class="nav_col1">
+        <div class="col1-col">
+          <img src="assets/shared/logo.svg" alt="" onclick="home()">
+          <span></span>
+        </div>
+        
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+      <div class="nav_col2">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <nav>
+          <ul>
+            <li><a href="index.html">00 Home</a></li>
+            <li><a href="destination-moon.html">01 Destination</a></li>
+            <li><a href="crew-commander.html">02 Crew</a></li>
+            <li class="active"><a href="technology-vehicle.html">03 Technology</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <h2 class="dest-title"><span class="colored">03</span> Space launch 101</h2>
+
+    <img src="assets/technology/image-launch-vehicle-portrait.jpg" alt="" class="vehicle-img">
+    <img src="assets/technology/image-launch-vehicle-landscape.jpg" alt="" class="vehicle-img1">
+
+    <div class="vehicle-links">
+      <a href="technology-vehicle.html" class='link-active'><p style="color: #0B0D17;">1</p></a>
+      <a href="technology-spaceport.html"><p>2</p></a>
+      <a href="technology-capsule.html"><p>3</p></a>
+    </div>
+
+    <div class="vehicle-content">
+      <h2 class="vehicle-title">The terminology...</h2>
+      <h2 class="vehicle-name"></h2>
+      <h2 class="vehicle-description"></h2>
+    </div>
+
+  </section>
+
+  <script src="index.js"></script>
+  <script>
+    DataForVehicle();
+  </script>
+</body>
+</html>
