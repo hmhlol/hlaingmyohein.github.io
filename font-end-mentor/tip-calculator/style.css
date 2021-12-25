@@ -8,6 +8,12 @@
     background-color: hsl(185, 41%, 84%);
     font-family: 'Space Mono', monospace;
 }
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5%;
+}
 .card{
     width: 750px;
     height: 370px;
@@ -224,15 +230,19 @@ input[type=number] {
     background-color: hsl(172, 67%, 45%);
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:770px) {
+    .logo{
+        top: 10px;
+    }
     .main{
         width: 100vw;
-        height: 120vh;
+        height: 130vh;
     }
     .card{
         width: 90%;
         height: 700px;
         display: block;
+        margin-top: 90px;
     }
     .bill-form,.people-form{
         width: 80%;
