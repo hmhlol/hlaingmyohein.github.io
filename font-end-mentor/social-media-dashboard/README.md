@@ -33,8 +33,8 @@ Dark theme
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/hlaingmyohein/hlaingmyohein.github.io/tree/main/font-end-mentor/social-media-dashboard)
-- Live Site URL: [Add live site URL here](https://hlaingmyohein.github.io/font-end-mentor/social-media-dashboard/)
+- Solution URL: [HERE](https://github.com/hlaingmyohein/hlaingmyohein.github.io/tree/main/font-end-mentor/social-media-dashboard)
+- Live Site URL: [HERE](https://hlaingmyohein.github.io/font-end-mentor/social-media-dashboard/)
 
 ## My process
 
