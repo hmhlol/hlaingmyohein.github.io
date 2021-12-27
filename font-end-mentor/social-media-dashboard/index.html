@@ -15,10 +15,6 @@
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
@@ -29,6 +25,7 @@
         <h2 class="title">Social Media Dashboard</h2>
         <p class="users">Total Followers: 23,004</p>
       </div>
+      <span class="line"></span>
       <div class="col2">
         <h2 class="mode">Dark Mode</h2>
         <label class="switch">
@@ -228,11 +225,18 @@
       </div>
 
     </div>
-    <!-- <div class="attribution">
+    <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+      Coded by <a href="https://twitter.com/HMHish3r3">kyUu6i</a>.
+  </div>
   </div>
   
+  <script>
+    var button = document.querySelector('.slider');
+    button.onclick = function(){
+      document.body.classList.toggle('dark-theme');
+    }
+  </script>
+
 </body>
 </html>
