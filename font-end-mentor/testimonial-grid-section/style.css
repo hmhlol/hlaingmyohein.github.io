@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+}
+.main{
+    width: 100%;
+    padding:5%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    /* border: 1px solid blue; */
+    width: 90%;
+    display: grid;
+    grid-template-columns: 70% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "col1 col2";
+    grid-gap: 1.5em;
+    position: absolute;
+    cursor: pointer;
+}
+.col1{
+    grid-area: 'col1';
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: 
+    'row1'
+    'row2';
+    grid-gap: 1em;
+}
+.row1{
+    grid-area: 'row1';
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.card1{
+    flex-basis: 67%;
+    /* border: 1px solid black; */
+    background-image: linear-gradient(to right, hsl(263, 55%, 52%),hsl(263, 77%, 59%));
+    z-index: -3;
+    border-radius: 10px;
+}
+.profile{
+    display: flex;
+    width: 170px;
+    /* border: 1px solid blue; */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    left: 3%;
+    top: 3%;
+    position: absolute;
+}
+.profile-img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.active{
+    border: 3px solid rgba(255,255,255,0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.profile-content h2{
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-size: 15px;
+}
+.profile-content h3{
+    color: rgba(255,255,255,0.5);
+    font-weight: 500;
+    font-size: 15px;
+}
+.quote{
+    /* border: 1px solid red; */
+    position: relative;
+    left: 65%;
+    top: 0;
+    width: 150px;
+}
+.quote img{
+    width: 150px;
+}
+.intro{
+    width: 94%;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 25px;
+    position: relative;
+    top: -40px;
+    padding-left: 5%;
+}
+.content{
+    width: 90%;
+    color: rgba(255,255,255,0.7);
+    padding-left: 5%;
+    font-size: 14px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+
+.card2{
+    flex-basis: 30%;
+    /* border: 1px solid black; */
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+}
+.card2-profile{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid blue; */
+    width: 170px;
+    margin-left: 30px;
+    margin-top: 20px;
+    align-items: center;
+}
+.card2-intro{
+    color: hsl(0, 0%, 100%);
+    margin-left: 30px;
+    font-size: 30px;
+    width: 85%;
+    margin-top: 20px;
+}
+.card2-content{
+    color: rgba(255,255,255,0.7);
+    margin-left: 30px;
+    font-size: 14px;
+    width: 80%;
+    margin-top: 10px;
+    line-height: 20px;
+
+}
+
+
+.row2{
+    grid-area: 'row2';
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.card3{
+    flex-basis: 30%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background-color: #fff;
+}
+.card3 .profile-content h2{
+    color: #000;
+}
+.card3 .profile-content h3{
+    color: rgba(0,0,0,0.5);
+}
+.card3-intro{
+    color: hsl(219, 29%, 14%);
+    margin-left: 30px;
+    font-size: 30px;
+    width: 90%;
+    margin-top: 20px;
+}
+.card3-content{
+    color: rgba(0,0,0,0.7);
+    margin-left: 30px;
+    font-size: 14px;
+    width: 75%;
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+
+
+.card4{
+    flex-basis: 67%;
+    /* border: 1px solid black; */
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 10px;
+}
+.card4 .card2-profile{
+    margin-top: 40px;
+}
+.card4 .active{
+    border: 3px solid hsl(263, 55%, 52%);
+}
+.card4 .card2-intro{
+    width: 90%;
+    font-size: 23px;
+}
+.card4 .card2-content{
+    margin-top: 20px;
+    width: 90%;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+.row2{
+    grid-area: 'row2';
+}
+.col2{
+    grid-area: 'col2';
+    /* border: 1px solid red; */
+    background-color: #fff;
+    border-radius: 10px;
+}
+.col2 .profile-content h2{
+    color: #000;
+}
+.col2 .profile-content h3{
+    color: rgba(0,0,0,0.5);
+}
+.col2 .card3-intro{
+    width: 90%;
+    font-size: 23px;
+}
+.col2 .card3-content{
+    line-height: normal;
+    font-size: 16px;
+}
+.attribution{
+    text-align: center;
+    position: relative;
+    top: -50px;
+    width: 90%;
+    font-size: 25px;
+}
+.attribution a{
+    text-decoration: none;
+    color: hsl(263, 55%, 52%);
+}
+
+@media only screen and (max-width: 770px) {
+    .container{
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        "col1"
+        "col2";
+        padding: 5%;
+    }
+    
+    .row1{
+        grid-area: 'row1';
+        display: block;
+        height: 100%;
+        box-sizing: border-box;
+        /* border: 1px solid blue; */
+    }
+    .card1{
+        height: 55%;
+    }
+    .profile{
+        top: 0;
+        left: 0;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .card1 .intro{
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .card1 .content{
+        margin-bottom: 50px;
+        line-height: 25px;
+
+    }
+    .quote{
+        left: 60%;
+    }
+    .quote img{
+        width: 110px;        
+    }
+    .card2{
+        height: 35%;
+        padding-top: 5%;
+    }
+    .card2-intro{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .card2-content{
+        line-height: 23px;
+    }
+    .row2{
+        display: block;
+        /* border: 1px solid blue; */
+    }
+    .card3{
+        height: 30%;
+        padding-top: 5%;
+        margin-bottom: 50px;
+    }
+    .card3-intro{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .card4{
+        height: 60%;
+        padding-top: 5%;
+    }
+    .card4 .card2-content{
+        margin-top: 30px;
+        line-height: 25px;
+        font-size: 17px;
+    }
+    .col2{
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    
+}
