@@ -451,3 +451,16 @@ h1 {
 .lttr {
   fill: #763c8c;
 }
+
+.final-message {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  margin-top: 3rem;
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s, visibility 1s;
+}
